@@ -8,9 +8,9 @@ import { MostLoved } from "./components/ui/MostLoved";
 import { TraditionSection } from "./components/ui/TraditionSection";
 import { Features } from "./components/ui/Features";
 import { InstagramSection } from "./components/layout/InstagramSection";
-import { Testimonials } from "./components/layout/testimonials";
+import { Testimonials } from "./components/layout/Testimonials";
 import { CTA } from "./components/ui/CTA";
-import { Footer } from "./components/layout/footer";
+import { Footer } from "./components/layout/Footer";
 
 /* =========================================================
    PJ JEWELS — COMPLETE SINGLE FILE REACT WEBSITE
