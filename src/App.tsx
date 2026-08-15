@@ -169,36 +169,36 @@ const Icon = ({ name, size = 20, strokeWidth = 1.5 }: IconProps) => {
    ========================================================= */
 
 const IMAGES = {
-  hero: "/images/hero-necklace.jpg",
+  hero: "/src/assets/images/hero-necklace.jpg",
 
   collections: {
-    necklaces: "/images/collection-necklace.jpg",
-    mangalsutra: "/images/collection-mangalsutra.jpg",
-    earrings: "/images/collection-earrings.jpg",
-    bridal: "/images/collection-bridal.jpg",
+    necklaces: "/src/assets/images/collection-necklace.jpg",
+    mangalsutra: "/src/assets/images/collection-mangalsutra.jpg",
+    earrings: "/src/assets/images/collection-earrings.jpg",
+    bridal: "/src/assets/images/collection-bridal.jpg",
   },
 
-  signature: "/images/signature-necklace.jpg",
+  signature: "/src/assets/images/signature-necklace.jpg",
 
   products: {
-    antiqueCoin: "/images/product-antique-coin.jpg",
-    classicLakshmi: "/images/product-classic-lakshmi.jpg",
-    rubyElegance: "/images/product-ruby-elegance.jpg",
-    greenStone: "/images/product-green-stone.jpg",
-    traditionalEarrings: "/images/product-traditional-earrings.jpg",
-    pearlHeritage: "/images/product-pearl-heritage.jpg",
-    templeCharm: "/images/product-temple-charm.jpg",
-    royalAntique: "/images/product-royal-antique.jpg",
+    antiqueCoin: "/src/assets/images/product-antique-coin.jpg",
+    classicLakshmi: "/src/assets/images/product-classic-lakshmi.jpg",
+    rubyElegance: "/src/assets/images/product-ruby-elegance.jpg",
+    greenStone: "/src/assets/images/product-green-stone.jpg",
+    traditionalEarrings: "/src/assets/images/product-traditional-earrings.jpg",
+    pearlHeritage: "/src/assets/images/product-pearl-heritage.jpg",
+    templeCharm: "/src/assets/images/product-temple-charm.jpg",
+    royalAntique: "/src/assets/images/product-royal-antique.jpg",
   },
 
-  tradition: "/images/tradition.jpg",
+  tradition: "/src/assets/images/tradition.jpg",
 
   instagram: [
-    "/images/instagram-1.jpg",
-    "/images/instagram-2.jpg",
-    "/images/instagram-3.jpg",
-    "/images/instagram-4.jpg",
-    "/images/instagram-5.jpg",
+    "/src/assets/instagram/instagram-1.jpg",
+    "/src/assets/instagram/instagram-2.jpg",
+    "/src/assets/instagram/instagram-3.jpg",
+    "/src/assets/instagram/instagram-4.jpg",
+    "/src/assets/instagram/instagram-5.jpg",
   ],
 
   logo: "/images/logo.png",
