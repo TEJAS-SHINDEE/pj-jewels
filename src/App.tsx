@@ -27,7 +27,29 @@
 // export default App;
 
 
+import heroImage from "./assets/images/hero-necklace.jpg";
+import collectionNecklace from "./assets/images/collection-necklace.jpg";
+import collectionMangalsutra from "./assets/images/collection-mangalsutra.jpg";
+import collectionEarrings from "./assets/images/collection-earrings.jpg";
+import collectionBridal from "./assets/images/collection-bridal.jpg";
 
+import signatureNecklace from "./assets/images/signature-necklace.jpg";
+
+import antiqueCoin from "./assets/images/product-antique-coin.jpg";
+import classicLakshmi from "./assets/images/product-classic-lakshmi.jpg";
+import rubyElegance from "./assets/images/product-ruby-elegance.jpg";
+import greenStone from "./assets/images/product-green-stone.jpg";
+import traditionalEarrings from "./assets/images/product-traditional-earrings.jpg";
+import pearlHeritage from "./assets/images/product-pearl-heritage.jpg";
+import templeCharm from "./assets/images/product-temple-charm.jpg";
+import royalAntique from "./assets/images/product-royal-antique.jpg";
+
+import traditionImage from "./assets/images/tradition.jpg";
+import instagram1 from "./assets/instagram/instagram-1.jpg";
+import instagram2 from "./assets/instagram/instagram-2.jpg";
+import instagram3 from "./assets/instagram/instagram-3.jpg";
+import instagram4 from "./assets/instagram/instagram-4.jpg";
+import instagram5 from "./assets/instagram/instagram-5.jpg";
 import React, { useState } from "react";
 
 /* =========================================================
@@ -169,38 +191,37 @@ const Icon = ({ name, size = 20, strokeWidth = 1.5 }: IconProps) => {
    ========================================================= */
 
 const IMAGES = {
-  hero: "/src/assets/images/hero-necklace.jpg",
+  hero: heroImage,
 
   collections: {
-    necklaces: "/src/assets/images/collection-necklace.jpg",
-    mangalsutra: "/src/assets/images/collection-mangalsutra.jpg",
-    earrings: "/src/assets/images/collection-earrings.jpg",
-    bridal: "/src/assets/images/collection-bridal.jpg",
+    necklaces: collectionNecklace,
+    mangalsutra: collectionMangalsutra,
+    earrings: collectionEarrings,
+    bridal: collectionBridal,
   },
 
-  signature: "/src/assets/images/signature-necklace.jpg",
+  signature: signatureNecklace,
 
   products: {
-    antiqueCoin: "/src/assets/images/product-antique-coin.jpg",
-    classicLakshmi: "/src/assets/images/product-classic-lakshmi.jpg",
-    rubyElegance: "/src/assets/images/product-ruby-elegance.jpg",
-    greenStone: "/src/assets/images/product-green-stone.jpg",
-    traditionalEarrings: "/src/assets/images/product-traditional-earrings.jpg",
-    pearlHeritage: "/src/assets/images/product-pearl-heritage.jpg",
-    templeCharm: "/src/assets/images/product-temple-charm.jpg",
-    royalAntique: "/src/assets/images/product-royal-antique.jpg",
+    antiqueCoin,
+    classicLakshmi,
+    rubyElegance,
+    greenStone,
+    traditionalEarrings,
+    pearlHeritage,
+    templeCharm,
+    royalAntique,
   },
 
-  tradition: "/src/assets/images/tradition.jpg",
+  tradition: traditionImage,
 
   instagram: [
-    "/src/assets/instagram/instagram-1.jpg",
-    "/src/assets/instagram/instagram-2.jpg",
-    "/src/assets/instagram/instagram-3.jpg",
-    "/src/assets/instagram/instagram-4.jpg",
-    "/src/assets/instagram/instagram-5.jpg",
+    instagram1,
+    instagram2,
+    instagram3,
+    instagram4,
+    instagram5,
   ],
-
   logo: "/images/logo.png",
 };
 
@@ -330,11 +351,10 @@ function Navbar() {
               <a
                 key={item}
                 href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
-                className={`relative py-6 text-[12px] text-[#514435] transition-colors duration-300 hover:text-[#9b702d] ${
-                  index === 0
+                className={`relative py-6 text-[12px] text-[#514435] transition-colors duration-300 hover:text-[#9b702d] ${index === 0
                     ? "after:absolute after:bottom-[8px] after:left-1/2 after:h-[1px] after:w-4 after:-translate-x-1/2 after:bg-[#b78a42]"
                     : ""
-                }`}
+                  }`}
               >
                 {item}
               </a>
@@ -767,11 +787,10 @@ function ProductCard({ product }: ProductCardProps) {
 
         <button
           onClick={() => setLiked(!liked)}
-          className={`absolute right-2 top-2 flex h-7 w-7 items-center justify-center rounded-full bg-white/80 backdrop-blur transition ${
-            liked
+          className={`absolute right-2 top-2 flex h-7 w-7 items-center justify-center rounded-full bg-white/80 backdrop-blur transition ${liked
               ? "text-[#a87532]"
               : "text-[#766956] hover:text-[#a87532]"
-          }`}
+            }`}
         >
           <Icon
             name="heart"
@@ -915,27 +934,27 @@ function Features() {
     title: string;
     text: string;
   }> = [
-    {
-      icon: "flower",
-      title: "Timeless Designs",
-      text: "Elegant jewellery inspired by Indian tradition.",
-    },
-    {
-      icon: "diamond",
-      title: "Premium Finish",
-      text: "Crafted with attention to every detail.",
-    },
-    {
-      icon: "shield",
-      title: "Trusted Quality",
-      text: "Designed with care and confidence.",
-    },
-    {
-      icon: "heart",
-      title: "Made For You",
-      text: "Jewellery for celebrations, moments and memories.",
-    },
-  ];
+      {
+        icon: "flower",
+        title: "Timeless Designs",
+        text: "Elegant jewellery inspired by Indian tradition.",
+      },
+      {
+        icon: "diamond",
+        title: "Premium Finish",
+        text: "Crafted with attention to every detail.",
+      },
+      {
+        icon: "shield",
+        title: "Trusted Quality",
+        text: "Designed with care and confidence.",
+      },
+      {
+        icon: "heart",
+        title: "Made For You",
+        text: "Jewellery for celebrations, moments and memories.",
+      },
+    ];
 
   return (
     <section className="border-b border-[#e3ceb0] bg-[#fffdf9]">
@@ -944,9 +963,8 @@ function Features() {
         {features.map((feature, index) => (
           <div
             key={feature.title}
-            className={`flex items-center gap-3 px-5 py-5 sm:gap-4 sm:px-8 sm:py-6 ${
-              index !== 0 ? "border-l border-[#e2cfb0]" : ""
-            }`}
+            className={`flex items-center gap-3 px-5 py-5 sm:gap-4 sm:px-8 sm:py-6 ${index !== 0 ? "border-l border-[#e2cfb0]" : ""
+              }`}
           >
             <div className="shrink-0 text-[#b78338]">
               <Icon name={feature.icon} size={30} strokeWidth={1.1} />
@@ -1054,11 +1072,10 @@ function Testimonials() {
         {testimonials.map((item, index) => (
           <div
             key={item.author}
-            className={`relative px-6 py-3 text-center ${
-              index !== 0
+            className={`relative px-6 py-3 text-center ${index !== 0
                 ? "border-t border-[#e2ceb0] md:border-l md:border-t-0"
                 : ""
-            }`}
+              }`}
           >
             <div className="absolute left-4 top-0 text-[24px] text-[#bd8d43]">
               “
