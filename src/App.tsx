@@ -18,6 +18,16 @@
 
 
 
+// import AppRoutes from "./routes/AppRoutes";
+
+// function App() {
+//   return <AppRoutes />;
+// }
+
+// export default App;
+
+
+
 import React, { useState } from "react";
 
 /* =========================================================
@@ -28,8 +38,29 @@ import React, { useState } from "react";
    ICONS
    ========================================================= */
 
-const Icon = ({ name, size = 20, strokeWidth = 1.5 }) => {
-  const common = {
+type IconName =
+  | "search"
+  | "heart"
+  | "bag"
+  | "menu"
+  | "close"
+  | "arrowRight"
+  | "arrowLeft"
+  | "star"
+  | "instagram"
+  | "phone"
+  | "shield"
+  | "diamond"
+  | "flower";
+
+interface IconProps {
+  name: IconName;
+  size?: number;
+  strokeWidth?: number;
+}
+
+const Icon = ({ name, size = 20, strokeWidth = 1.5 }: IconProps) => {
+  const common: React.SVGProps<SVGSVGElement> = {
     width: size,
     height: size,
     viewBox: "0 0 24 24",
@@ -519,7 +550,17 @@ function StorySection() {
    SECTION TITLE
    ========================================================= */
 
-function SectionTitle({ eyebrow, title, subtitle }) {
+interface SectionTitleProps {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+}
+
+function SectionTitle({
+  eyebrow,
+  title,
+  subtitle,
+}: SectionTitleProps) {
   return (
     <div className="mb-6 text-center">
       {eyebrow && (
@@ -556,7 +597,17 @@ function SectionTitle({ eyebrow, title, subtitle }) {
    COLLECTION CARD
    ========================================================= */
 
-function CollectionCard({ collection }) {
+interface Collection {
+  title: string;
+  subtitle: string;
+  image: string;
+}
+
+interface CollectionCardProps {
+  collection: Collection;
+}
+
+function CollectionCard({ collection }: CollectionCardProps) {
   return (
     <a
       href="#most-loved"
@@ -690,7 +741,18 @@ function SignatureProduct() {
    PRODUCT CARD
    ========================================================= */
 
-function ProductCard({ product }) {
+interface Product {
+  category: string;
+  name: string;
+  price: string;
+  image: string;
+}
+
+interface ProductCardProps {
+  product: Product;
+}
+
+function ProductCard({ product }: ProductCardProps) {
   const [liked, setLiked] = useState(false);
 
   return (
@@ -848,7 +910,11 @@ function TraditionSection() {
    ========================================================= */
 
 function Features() {
-  const features = [
+  const features: Array<{
+    icon: IconName;
+    title: string;
+    text: string;
+  }> = [
     {
       icon: "flower",
       title: "Timeless Designs",
