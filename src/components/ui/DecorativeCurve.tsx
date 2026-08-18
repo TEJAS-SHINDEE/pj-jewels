@@ -1,5 +1,3 @@
-import { DecorativeArt } from "./DecorativeArt";
-
 
 export function DecorativeCurve() {
 
