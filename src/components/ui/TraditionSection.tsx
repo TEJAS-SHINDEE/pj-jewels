@@ -4,7 +4,7 @@
    ========================================================= */
 
 import { IMAGES } from "../../data/Collections";
-
+import { Link } from "react-router-dom";
 export function TraditionSection() {
   return (
     <section className="border-b border-[#d9c39c] bg-[#fffdf8]">
@@ -57,14 +57,13 @@ export function TraditionSection() {
               elegance.
             </p>
 
-            <a
-              href="#about-us"
+            <Link
+              to="/about-us"
               className="mt-4 inline-block text-[10px] text-[#9c712f]"
             >
               Discover Our Story
               <span className="ml-2">→</span>
-            </a>
-
+            </Link>
           </div>
         </div>
       </div>

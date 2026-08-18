@@ -2,6 +2,8 @@
    COLLECTION CARD
    ========================================================= */
 
+import { Link } from "react-router-dom";
+
 interface Collection {
   title: string;
   subtitle: string;
@@ -14,8 +16,8 @@ interface CollectionCardProps {
 
 export function CollectionCard({ collection }: CollectionCardProps) {
   return (
-    <a
-      href="#most-loved"
+    <Link
+      to="/collections"
       className="group block overflow-hidden rounded-[6px] border border-[#e3cfad] bg-[#fffdfa]"
     >
       <div className="aspect-[1.45/1] overflow-hidden bg-[#f1ebe0]">
@@ -36,11 +38,12 @@ export function CollectionCard({ collection }: CollectionCardProps) {
 
         <p className="mt-1 text-[10px] text-[#a67a37]">
           {collection.subtitle}
+
           <span className="ml-2 inline-block transition group-hover:translate-x-1">
             →
           </span>
         </p>
       </div>
-    </a>
+    </Link>
   );
 }

@@ -6,6 +6,7 @@
 import { products } from "../../data/Collections";
 import { ProductCard } from "./ProductCard";
 import { SectionTitle } from "./SectionTitle";
+import { Link } from "react-router-dom";
 
 export function MostLoved() {
   return (
@@ -25,12 +26,12 @@ export function MostLoved() {
       </div>
 
       <div className="mt-4 text-center">
-        <a
-          href="#collections"
+        <Link
+          to="/collections"
           className="inline-block border border-[#b98a47] px-7 py-2 text-[9px] text-[#73562f] transition hover:bg-[#a77b35] hover:text-white"
         >
           VIEW ALL COLLECTIONS
-        </a>
+        </Link>
       </div>
     </section>
   );

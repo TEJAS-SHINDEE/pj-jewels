@@ -24,6 +24,24 @@ export function CollectionsSection() {
             collection={collection}
           />
         ))}
+        {collections.map((collection) => (
+          <CollectionCard
+            key={collection.title}
+            collection={collection}
+          />
+        ))}
+        {collections.map((collection) => (
+          <CollectionCard
+            key={collection.title}
+            collection={collection}
+          />
+        ))}
+        {collections.map((collection) => (
+          <CollectionCard
+            key={collection.title}
+            collection={collection}
+          />
+        ))}
       </div>
     </section>
   );

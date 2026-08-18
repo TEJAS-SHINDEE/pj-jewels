@@ -23,8 +23,10 @@ export function InstagramSection() {
           </p>
 
           <a
-            href="#instagram"
-            className="mt-3 inline-flex items-center gap-2 text-[9px] text-[#9d7337]"
+            href="https://www.instagram.com/pj_jewels_by_meghana/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex items-center gap-2 text-[9px] text-[#9d7337] transition hover:text-[#7f5a2b]"
           >
             FOLLOW US ON INSTAGRAM
             <span>→</span>
@@ -34,7 +36,9 @@ export function InstagramSection() {
         <div className="grid flex-1 grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-5">
           {IMAGES.instagram.map((image, index) => (
             <a
-              href="#instagram"
+              href="https://www.instagram.com/pj_jewels_by_meghana/"
+              target="_blank"
+              rel="noopener noreferrer"
               key={index}
               className="group aspect-square overflow-hidden bg-[#eee7db]"
             >

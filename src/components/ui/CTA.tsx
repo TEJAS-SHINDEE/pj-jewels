@@ -4,6 +4,7 @@
    ========================================================= */
 
 import { IMAGES } from "../../data/Collections";
+import { Link } from "react-router-dom";
 
 export function CTA() {
   return (
@@ -31,12 +32,12 @@ export function CTA() {
             Discover jewellery that becomes part of your story.
           </p>
 
-          <a
-            href="#collections"
+          <Link
+            to="/collections"
             className="mt-4 inline-block bg-[#b18442] px-6 py-2 text-[9px] tracking-wide text-white transition hover:bg-[#8e682f]"
           >
             EXPLORE COLLECTION
-          </a>
+          </Link>
 
         </div>
       </div>
