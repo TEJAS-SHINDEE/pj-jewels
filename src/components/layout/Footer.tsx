@@ -150,7 +150,7 @@ export function Footer() {
             </Link>
 
             <Link
-              to="/contact"
+              to="/contact-us"
               className="transition hover:text-[#d2aa68]"
             >
               Contact Us

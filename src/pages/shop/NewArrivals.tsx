@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import { Icon } from "../../data/Icon";
 import { Link } from "react-router-dom";
+import { IMAGES, products } from "../../data/Collections";
+
 interface NewArrivalProduct {
   id: number;
   category: string;
@@ -17,7 +19,7 @@ const newArrivalProducts: NewArrivalProduct[] = [
     category: "NECKLACE",
     name: "Rajwada Gold Necklace",
     price: "₹18,500",
-    image: "/images/new-arrivals/necklace-1.jpg",
+    image: IMAGES.collections.necklaces,
     isNew: true,
   },
   {
@@ -25,7 +27,7 @@ const newArrivalProducts: NewArrivalProduct[] = [
     category: "MANGALSUTRA",
     name: "Aarohi Mangalsutra",
     price: "₹12,800",
-    image: "/images/new-arrivals/mangalsutra-1.jpg",
+    image: IMAGES.collections.mangalsutra,
     isNew: true,
   },
   {
@@ -33,7 +35,7 @@ const newArrivalProducts: NewArrivalProduct[] = [
     category: "EARRINGS",
     name: "Parijaat Jhumka",
     price: "₹7,900",
-    image: "/images/new-arrivals/earrings-1.jpg",
+    image: IMAGES.collections.earrings,
     isNew: true,
   },
   {
@@ -41,7 +43,7 @@ const newArrivalProducts: NewArrivalProduct[] = [
     category: "BANGLE",
     name: "Meera Gold Bangles",
     price: "₹15,200",
-    image: "/images/new-arrivals/bangle-1.jpg",
+    image: IMAGES.collections.necklaces,
     isNew: true,
   },
   {
@@ -49,7 +51,7 @@ const newArrivalProducts: NewArrivalProduct[] = [
     category: "NECKLACE",
     name: "Kalyani Temple Necklace",
     price: "₹21,500",
-    image: "/images/new-arrivals/necklace-2.jpg",
+    image: IMAGES.collections.necklaces,
     isNew: true,
   },
   {
@@ -57,7 +59,7 @@ const newArrivalProducts: NewArrivalProduct[] = [
     category: "EARRINGS",
     name: "Sitara Drop Earrings",
     price: "₹6,800",
-    image: "/images/new-arrivals/earrings-2.jpg",
+    image: IMAGES.collections.earrings,
     isNew: true,
   },
   {
@@ -65,7 +67,7 @@ const newArrivalProducts: NewArrivalProduct[] = [
     category: "MANGALSUTRA",
     name: "Saanvi Pearl Mangalsutra",
     price: "₹14,600",
-    image: "/images/new-arrivals/mangalsutra-2.jpg",
+    image: IMAGES.collections.mangalsutra,
     isNew: true,
   },
   {
@@ -73,7 +75,7 @@ const newArrivalProducts: NewArrivalProduct[] = [
     category: "BANGLE",
     name: "Rajsi Kada",
     price: "₹11,900",
-    image: "/images/new-arrivals/bangle-2.jpg",
+    image: IMAGES.collections.bridal,
     isNew: true,
   },
 ];
@@ -185,7 +187,7 @@ export function NewArrivals() {
 
           {/* Breadcrumb */}
 
-          <div className="mb-6 flex items-center justify-center gap-2 text-[8px] tracking-[0.22em] text-[#927957]">
+          {/* <div className="mb-6 flex items-center justify-center gap-2 text-[8px] tracking-[0.22em] text-[#927957]">
             <Link
               to="/"
               className="transition hover:text-[#a77b35]"
@@ -198,7 +200,7 @@ export function NewArrivals() {
             <span className="text-[#a77b35]">
               NEW ARRIVALS
             </span>
-          </div>
+          </div> */}
 
           {/* Small heading */}
 

@@ -1,6 +1,10 @@
 import type { SVGProps } from "react";
 
 export type IconName =
+  | "sparkles"
+  | "users"
+  | "plus"
+  | "minus"
   | "search"
   | "heart"
   | "bag"
@@ -10,11 +14,15 @@ export type IconName =
   | "arrowLeft"
   | "star"
   | "instagram"
-  |  "youtube"
+  | "youtube"
   | "phone"
   | "shield"
   | "diamond"
-  | "flower";
+  | "flower"
+  | "refresh"
+  | "info"
+  | "check"
+  | "package";
 
 interface IconProps extends SVGProps<SVGSVGElement> {
   name: IconName;
@@ -23,6 +31,67 @@ interface IconProps extends SVGProps<SVGSVGElement> {
 }
 
 export const icons = {
+  sparkles: (
+    <>
+      <path
+        d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M19 16L19.7 18.3L22 19L19.7 19.7L19 22L18.3 19.7L16 19L18.3 18.3L19 16Z"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinejoin="round"
+      />
+    </>
+  ),
+
+  users: (
+    <>
+      <path
+        d="M16 21V19C16 16.8 14.2 15 12 15H7C4.8 15 3 16.8 3 19V21"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+
+      <circle
+        cx="9.5"
+        cy="8"
+        r="3"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+
+      <path
+        d="M16 11C18.2 11 20 12.8 20 15V17"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+
+      <path
+        d="M15 5.2C17 5.4 18.5 7 18.5 9C18.5 10 18.1 10.9 17.4 11.6"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </>
+  ),
+  plus: (
+    <>
+      <line x1="12" y1="5" x2="12" y2="19" />
+      <line x1="5" y1="12" x2="19" y2="12" />
+    </>
+  ),
+
+  minus: (
+    <>
+      <line x1="5" y1="12" x2="19" y2="12" />
+    </>
+  ),
   search: (
     <>
       <circle cx="11" cy="11" r="7" />
@@ -118,6 +187,106 @@ export const icons = {
       <path d="M12 8.5c-2.8-2.5-2.5-5.2 0-6.5 2.5 1.3 2.8 4 0 6.5Z" />
       <path d="M8.3 11.5C4.6 11.7 2.5 9.8 3 7c2.8-.2 4.5 1.4 5.3 4.5Z" />
       <path d="M15.7 11.5C19.4 11.7 21.5 9.8 21 7c-2.8-.2-4.5 1.4-5.3 4.5Z" />
+    </>
+  ),
+  refresh: (
+    <>
+      <path
+        d="M20 11a8 8 0 0 0-14.9-4"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+
+      <path
+        d="M4 4v5h5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M4 13a8 8 0 0 0 14.9 4"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+
+      <path
+        d="M20 20v-5h-5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </>
+  ),
+
+  info: (
+    <>
+      <circle
+        cx="12"
+        cy="12"
+        r="9"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+
+      <path
+        d="M12 11v5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+
+      <circle
+        cx="12"
+        cy="8"
+        r="0.8"
+        fill="currentColor"
+      />
+    </>
+  ),
+
+  check: (
+    <path
+      d="M5 12.5L9.5 17L19 7"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  ),
+
+  package: (
+    <>
+      <path
+        d="M4 7.5L12 3L20 7.5V16.5L12 21L4 16.5V7.5Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M4 7.5L12 12L20 7.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+
+      <path
+        d="M12 12V21"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+
+      <path
+        d="M8 5.2L16 9.7"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
     </>
   ),
 };

@@ -6,9 +6,9 @@ const pageTitles: Record<string, string> = {
   "/collections": "PJ Jewels | Collections",
   "/new-arrivals": "PJ Jewels | New Arrivals",
   "/wishlist": "PJ Jewels | Wishlist",
-  "/cart": "PJ Jewels | Shopping Bag",
+  // "/cart": "PJ Jewels | Shopping Bag",
   "/about-us": "PJ Jewels | About Us",
-  "/contact": "PJ Jewels | Contact",
+  "/contact-us": "PJ Jewels | Contact",
 
   "/collections/necklaces": "PJ Jewels | Necklaces",
   "/collections/mangalsutra": "PJ Jewels | Mangalsutra",

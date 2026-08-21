@@ -11,7 +11,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden border-b border-[#d5b87c] pt-[64px] lg:pt-[90px]"
+      className="relative overflow-hidden border-b border-[#d5b87c]"
     >
       <div className="relative grid grid-cols-1 lg:min-h-[500px] lg:grid-cols-[42%_58%]">
 

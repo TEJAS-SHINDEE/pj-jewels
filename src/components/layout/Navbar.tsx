@@ -54,7 +54,7 @@ export function Navbar() {
     },
     {
       label: "Contact",
-      path: "/contact",
+      path: "/contact-us",
     },
   ];
 
@@ -83,7 +83,7 @@ export function Navbar() {
       <div
         className={`mx-auto transition-all duration-300 ${scrolled
           ? "w-full rounded-none border-b border-[#dfccb0] bg-[#fffdf9] shadow-md backdrop-blur-md"
-          : "max-w-[1500px] rounded-xl border border-[#d8bd8d] bg-[#fffdf9] shadow-sm backdrop-blur-md"
+          : "max-w-[1500px] rounded-xl border border-[#d8bd8d] bg-[#fffdf9] shadow-sm backdrop-blur-md "
           }`}
       >
         <div
@@ -158,13 +158,13 @@ export function Navbar() {
               <Icon name="heart" size={19} />
             </Link>
 
-            <Link
+            {/* <Link
               to="/cart"
               className="transition hover:text-[#a77a32]"
               aria-label="Shopping bag"
             >
               <Icon name="bag" size={19} />
-            </Link>
+            </Link> */}
 
             <button
               type="button"

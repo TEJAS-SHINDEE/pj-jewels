@@ -2,7 +2,7 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { HomePage } from "./HomePage";
+import { HomePage } from "../pages/shop/HomePage";
 import { NewArrivals } from "../pages/shop/NewArrivals";
 import { CollectionsSection } from "../components/ui/CollectionsSection";
 import { FAQ } from "../pages/shop/FAQ";
@@ -16,14 +16,12 @@ import { Navbar } from "../components/layout/Navbar";
 import { Footer } from "../components/layout/Footer";
 import { Wishlist } from "../pages/shop/Wishlist";
 import { PageTitle } from "../components/layout/PageTitle";
+import { OrderTracking } from "../pages/shop/OrderTracking";
+import { AboutUs } from "../pages/shop/AboutUs";
+import { ContactUs } from "../pages/shop/ContactUs";
+import { Collections } from "../pages/shop/Collections";
+import Cart from "../pages/shop/CartPage";
 
-function Shop() {
-  return <div>Shop Page</div>;
-}
-
-function Cart() {
-  return <div>Cart Page</div>;
-}
 
 function NotFound() {
   return (
@@ -48,45 +46,96 @@ export default function AppRoutes() {
   return (
     <BrowserRouter>
       <PageTitle />
+
       <Navbar />
 
-      <Routes>
+      {/* IMPORTANT:
+          Navbar is fixed, so create space for it.
+      */}
+      <main className="pt-[80px] lg:pt-[82px] ">
+        <Routes>
 
-        {/* Homepage */}
-        <Route path="/" element={<HomePage />} />
+          {/* Home */}
+          <Route path="/" element={<HomePage />} />
 
-        {/* New Arrivals */}
-        <Route path="/new-arrivals" element={<NewArrivals />} />
+          {/* Contact Us */}
+          <Route path="/contact-us" element={<ContactUs />} />
 
-        {/* Other pages */}
-        <Route path="/shop" element={<Shop />} />
+         
+          {/* Collections */}
+          <Route path="/collections" element={<Collections />} />
+          
+          <Route
+            path="/collections/necklaces"
+            element={<Necklaces />}
+          />
 
-        <Route path="/cart" element={<Cart />} />
+          <Route
+            path="/collections/mangalsutra"
+            element={<Mangalsutra />}
+          />
 
-        <Route path="*" element={<NotFound />} />
+          <Route
+            path="/collections/earrings"
+            element={<Earrings />}
+          />
 
-        <Route path="/collections" element={<CollectionsSection />} />
-        <Route path="/new-arrivals" element={<NewArrivals />} />
+          <Route
+            path="/collections/bridal"
+            element={<Bridal />}
+          />
 
-        <Route path="/collections/necklaces" element={<Necklaces />} />
+          {/* Products */}
+          <Route
+            path="/new-arrivals"
+            element={<NewArrivals />}
+          />
 
-        <Route path="/collections/mangalsutra" element={<Mangalsutra />} />
+          {/* Customer */}
+          <Route
+            path="/wishlist"
+            element={<Wishlist />}
+          />
 
-        <Route path="/collections/earrings" element={<Earrings />} />
+          {/* <Route
+            path="/cart"
+            element={<Cart />}
+          /> */}
 
-        <Route path="/collections/bridal" element={<Bridal />} />
+          {/* Information */}
+          <Route
+            path="/shipping"
+            element={<Shipping />}
+          />
+          {/* Information */}
+          <Route
+            path="/about-us"
+            element={<AboutUs />}
+          />
 
-        <Route path="/shipping" element={<Shipping />} />
+          <Route
+            path="/returns"
+            element={<Returns />}
+          />
 
-        <Route path="/returns" element={<Returns />} />
+          <Route
+            path="/faq"
+            element={<FAQ />}
+          />
 
-        <Route path="/faq" element={<FAQ />} />
+          <Route
+            path="/order-tracking"
+            element={<OrderTracking />}
+          />
 
-        {/* <Route path="/order-tracking" element={<OrderTracking />} /> */}
-        <Route path="/wishlist" element={<Wishlist />} />
+          {/* 404 */}
+          <Route
+            path="*"
+            element={<NotFound />}
+          />
 
-        <Route path="/cart" element={<Cart />} />
-      </Routes>
+        </Routes>
+      </main>
 
       <Footer />
     </BrowserRouter>
