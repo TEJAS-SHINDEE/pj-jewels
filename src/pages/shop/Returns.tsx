@@ -4,7 +4,7 @@ import { Icon, type IconName } from "../../data/Icon";
 import { Link } from "react-router-dom";
 
 export function Returns() {
-  const returnSteps = [
+  const returnSteps: { number: string, title: string, description: string, icon:IconName}[] = [
     {
       number: "01",
       title: "Contact Us",

@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { Icon } from "../../data/Icon";
 import { Link } from "react-router-dom";
-import { IMAGES, products } from "../../data/Collections";
+import { IMAGES } from "../../data/Collections";
 
 interface NewArrivalProduct {
   id: number;

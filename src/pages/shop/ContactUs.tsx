@@ -1,8 +1,7 @@
 // src/pages/shop/Contact.tsx
 
-import { FormEvent, useState } from "react";
+import { type FormEvent, useState } from "react";
 import { Icon } from "../../data/Icon";
-import { Link } from "react-router-dom";
 
 export function ContactUs() {
   const [submitted, setSubmitted] = useState(false);

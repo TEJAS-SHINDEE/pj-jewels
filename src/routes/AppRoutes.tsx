@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { HomePage } from "../pages/shop/HomePage";
 import { NewArrivals } from "../pages/shop/NewArrivals";
-import { CollectionsSection } from "../components/ui/CollectionsSection";
 import { FAQ } from "../pages/shop/FAQ";
 import { Returns } from "../pages/shop/Returns";
 import { Shipping } from "../pages/shop/Shipping";
@@ -20,7 +19,6 @@ import { OrderTracking } from "../pages/shop/OrderTracking";
 import { AboutUs } from "../pages/shop/AboutUs";
 import { ContactUs } from "../pages/shop/ContactUs";
 import { Collections } from "../pages/shop/Collections";
-import Cart from "../pages/shop/CartPage";
 
 
 function NotFound() {
@@ -97,10 +95,6 @@ export default function AppRoutes() {
             element={<Wishlist />}
           />
 
-          {/* <Route
-            path="/cart"
-            element={<Cart />}
-          /> */}
 
           {/* Information */}
           <Route
